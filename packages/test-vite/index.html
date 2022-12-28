@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+    <style>
+      [template],
+      [x-name] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <button x-name="button" x-prop-count="0" x-prop-message="Hello World!">
+      <div>count: {{count}}</div>
+      <div>message: {{message}}</div>
+    </button>
+
+    <template x-render="button" x-prop-count="1" x-prop-message="one"></template>
+    <template x-render="button" x-prop-count="2" x-prop-message="two"></template>
+    <template x-render="button" x-prop-count="3" x-prop-message="three"></template>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

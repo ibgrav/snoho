@@ -1,0 +1,18 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+
+    "noEmit": true,
+    "strict": true,
+    "declaration": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
